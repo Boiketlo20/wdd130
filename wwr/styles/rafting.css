@@ -116,11 +116,7 @@ footer nav{
 }
 
 #Adventure{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 3fr;
-    align-items: center;
-    justify-content: center;
+    margin: 40px 0;
 }
 
 #Adventure img{
@@ -131,11 +127,38 @@ footer nav{
     margin: 0 auto;
 }
 
+.adventure-grid img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.adventure-grid figcaption {
+    margin-top: 10px; 
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    color: var(--accent2-color);
+}
+
 #Adventure h2{
     display: grid;
     align-self: center;
     grid-row: 1/2;
     grid-column: 1/6;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.adventure-grid figure {
+    margin: 0; 
+    text-align: center; 
 }
 
 #History{
