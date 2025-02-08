@@ -25,31 +25,33 @@
         <main>
             <h1>Contact Us</h1>
             <form>
-                <legend>Contact Information</legend>
-                <div class="form.item column1">
-                    <label for="fullname"> Full name:</label><br>
-                    <input type="text" id="fullname" name="fullname"><br>      
-                </div>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                        <div class="form.item column1">
+                            <label for="fullname"> Full name:</label><br>
+                            <input type="text" id="fullname" name="fullname"><br>      
+                        </div>
+                </fieldset>
                 <div class="form-item column1">
                     <label for="useremail"> E-mail address:</label><br>
                     <input type="email" id="useremail" name="useremial"><br>
                 </div>
                 <div class="item">
-                    <legend>What is the purpose of the message: </legend>
-                    <input type="radio" id="purpose" name="purpose" value="General inquiry">
-                    <label for="purpose">General inquiry</label><br>
-                    <input type="radio" id="purpose" name="purpose" value="Reservation question">
-                    <label for="purpose">Reservation question</label><br>
-                    <input type="radio" id="purpose" name="purpose" value="Website suggestion">
-                    <label for="purpose">Website suggestion</label><br>
+                    <p>What is the purpose of the message: </p>
+                    <input type="radio" id="purpose1" name="purpose" value="General inquiry">
+                    <label for="purpose1">General inquiry</label><br>
+                    <input type="radio" id="purpose2" name="purpose" value="Reservation question">
+                    <label for="purpose2">Reservation question</label><br>
+                    <input type="radio" id="purpose3" name="purpose" value="Website suggestion">
+                    <label for="purpose3">Website suggestion</label><br>
                 </div>
                 <label for="message">Enter your message:</label><br>
-                <textarea name="message" rows="10" placeholder="message" ></textarea>
+                <textarea id="message" name="message" rows="10" placeholder="message" ></textarea>
                 <div class="form-item column2">
                     <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
                     <input type="checkbox" id="newsletter" name="newsletter">
                 </div>
-                <button type="button">Submit</button>
+                <button type="submit">Submit</button>
             </form>
             <section id="employees">
                 <h2>WhiteWater Rafting Employees</h2>
@@ -68,8 +70,8 @@
                     </figure>
                 </div>    
             </section>
-            <h2>How to reach us</h2>
             <section id="contact-info">
+                <h2>How to reach us</h2>
                 <i class="fas fa-phone"></i> Phone: +27 67 024 7648
                 <i class="fas fa-envelope"></i> Email: nzimandeyolanda058@gmail.com
                 <i class="fas fa-map-marker-alt"></i> Address: 123 Main St, Sasolburg, Free State
