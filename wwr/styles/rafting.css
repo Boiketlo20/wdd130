@@ -187,3 +187,108 @@ footer nav{
     text-align: center;
     align-self: center;
 }
+
+form{
+    width: 600px;
+    margin: 0 autp;
+    padding: 1rem;
+    border: 1px solid var(--accent2-color);
+    border-radius: 0.5rem;
+    background-color: var(--accent1-color);
+    display: grid;
+}
+
+label, input, button, textarea{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button{
+    margin: 2rem;
+    background-color: var(--primary-color);
+    color:black;
+    border: none;
+    border-radius: 0.5rem;
+    height: 20px;
+}
+
+button:hover{
+    background-color: #123C54;
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
+
+.column1{
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.item{
+    width: 250px;
+    margin: 0 autp;
+    padding: 1rem;
+    border: 1px solid var(--accent2-color);
+    border-radius: 0.5rem;
+    background-color: var(--accent1-color);
+}
+
+#employee img{
+    grid-row: 2/3;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.employee-grid img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    align-self: center;
+}
+
+.employee-grid figcaption {
+    margin-top: 10px; 
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    color: va(--accent2-color);
+}
+
+.empolyee-grid figure {
+    margin: 0; 
+    text-align: center; 
+}
+
+i.fas{
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.2 rem;
+}
+
+.map{
+    width: 100%;
+}
+
+.map iframe{
+    width: 600px;
+    height: 300px;
+}
