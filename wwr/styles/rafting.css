@@ -35,8 +35,9 @@ p{
     padding: 0; 
 }
 
-.hero-article-text {
+.hero article p {
     color: var(--secondary-color);
+    text-shadow: 3px 3px 5px var(--accent1-color);
     margin: 0;
     order: -1;
 }
@@ -69,7 +70,7 @@ p{
     position: absolute;
     opacity: 0.9;
     bottom: 200px;
-    background-color: var(--accent2-color);
+    background-color: black;
     left: 500px;
     padding: 15px;
     max-width: 600px;
@@ -89,7 +90,8 @@ p{
 }
 
 .hero article img{
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     margin-left: 15px;
     margin-bottom: 15px;
 }
