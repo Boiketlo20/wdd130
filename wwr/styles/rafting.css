@@ -1,0 +1,68 @@
+:root{
+    --primary-color : #2ec4b6 ; /*Turquoise*/
+    --secondary-color : #333333 ; /*Dark gray*/
+    --accent-color : #ffbf69 ; /*Light Orange*/
+    --background-tint : #cbf3f0  ; /*Pale blue*/
+    --neutral-color : #ffffff ; /*White*/
+    --heading-font : Arial, Helvetica, sans-seri ;
+    --text-font : Georgia, 'Times New Roman', Times, serif;
+}
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--Primary-font);
+    color: #333333 ;
+}
+
+header, main, footer{
+    width: 840px ;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: Arial, Helvetica, sans-serif ;
+    color: var(--secondary-color);
+}
+
+nav, p, section, article{
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a{
+    text-decoration: none;
+}
+
+.hero{
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    top: 20px;
+    color: var(--neutral-color);
+    text-align: center;
+}
+
+article{
+    position: absolute;
+    top: 50px;
+    color: var(--neutral-color);
+}
+
+.hero article img{
+    width: 130px;
+    height: auto;
+    float: right;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
