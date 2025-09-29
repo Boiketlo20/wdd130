@@ -41,7 +41,7 @@ nav ul li a{
 }
 
 header, main, footer{
-    width: 840px ;
+    width: 900px ;
     margin: 0 auto;
 }
 
@@ -121,6 +121,7 @@ article{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 7px;
+    justify-content: center;
 }
 
 figcaption{
@@ -133,4 +134,9 @@ figcaption{
 
 footer{
     display: flex;
+    justify-content: center;
+}
+
+footer nav{
+    justify-content: flex-end;
 }
