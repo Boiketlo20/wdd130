@@ -76,7 +76,7 @@ footer{
     text-align: center;
 }
 
-/*.form-item {
+.form-item {
   display: grid;
   justify-content: center;
 }
@@ -89,4 +89,4 @@ footer{
 .column2 {
   grid-template-columns: 1fr 2fr;
    margin: 0.5rem 0;
-}*/
+}

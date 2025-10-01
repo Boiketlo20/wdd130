@@ -34,10 +34,15 @@ nav ul{
     gap: 10px;
     list-style-type: none;
     padding-top: 20px;
+    justify-content: space-between;
 }
 
 nav ul li a{
     text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--background-tint);
+    border: 1px solid var(--primary-color);
+    padding: 10px;
 }
 
 header, main, footer{
@@ -63,7 +68,7 @@ nav, p, section, article{
     position: relative;
 }
 
-h1{
+.hero h1{
     position: absolute;
     color: var(--neutral-color);
     text-align: center;
@@ -136,4 +141,85 @@ footer{
     display: flex;
     justify-content: flex-end;
     gap: 50px;
+    background-color: var(--secondary-color);
+}
+
+footer p{
+    color: var(--background-tint);
+}
+
+/*Styling Contact Us page*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.employees{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 20px;
+}
+
+.employees h2{
+    margin-bottom: 10px;
+}
+.contact h1{
+    color: black;
+    text-align: center;
+    margin-top: 0;
+}
+
+.contact p{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+form{
+    background-color: lightsteelblue;
+    padding: 15px;
+    border-radius: 5px;
+    display: grid;
+}
+
+input[type="checkbox"]{
+    width: 40px;
+    height: 18px;
+    vertical-align: bottom ;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"]{
+    height: 30px;
+}
+
+textarea{
+    margin-top: 0;
+}
+
+button{
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.form-item1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.some{
+    display: grid;
+}
+
+.form-item{
+    display: grid;
+    justify-content: center;
+}
+
+.c1 {
+  grid-template-columns: 1fr 2fr;
+   margin-top: 5px;
 }

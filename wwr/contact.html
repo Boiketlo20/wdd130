@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This page will include contact information and a contact form which the user can submit to ask questions about the company and its services.">
+    <meta name="author" content="Boiketlo Nzimande">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-raftingcompas.jpg" alt="rafting logo">
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="about.html">About Us</a> </li>
+                <li> <a href="trips.html">Trips</a> </li>
+                <li> <a href="contact.html">Contact Us</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h1>Rafting Travel</h1>
+            <p>Fichardt St, 1947</p>
+            <p>Sasolburg, Free State</p>
+            <p>+27 16 445 9732</p>
+            <p>info@raftingtravel.co.za</p>
+        </section>
+        <section class="grid">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14242.50571878403!2d27.819419349999997!3d-26.820021099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e945dd43c4089d7%3A0xd5d50c83843aeb81!2sSasolburg%20Mall!5e0!3m2!1sen!2sza!4v1739023588095!5m2!1sen!2sza"
+                    width="400" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form>
+                <div class="form-item c1">
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+
+                <div class="form-item c1">
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+
+                <div class="form-item1">
+                    <p>Message Purpose</p>
+                    <div class="some">
+                        <label> <input type="radio" id="message1" name="message" value="GI"> General Inquiry </label>
+                        <label> <input type="radio" id="message2" name="message" value="RQ"> Reservation Question
+                        </label>
+                        <label> <input type="radio" id="message3" name="message" value="WS"> Website Suggestion </label>
+                    </div>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="6" placeholder="Type here..."></textarea>
+
+                <div>
+                    <label for="subscribe">Please subscribe me to the weekly newsletter</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="employees">
+            <h2 class="heading">We Are Here To Serve You</h2>
+            <figure>
+                <img src="images/employee1.jpg" alt="Ella Johnson" width="200">
+                <figcaption>Ella Johnson</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Goergia Miller" width="200">
+                <figcaption>Goergia Miller</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee4.jpg" alt="Joe baker" width="200">
+                <figcaption>Joe Baker</figcaption>
+            </figure>
+        </section>
+
+    </main>
+    <footer>
+        <p> ©️ 2025 🛶 Rafting Travel 🛶 Boiketlo Nzimande</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/"> <img src="images/facebook.svg" alt="facebook logo" width="50"
+                    height="50"> </a>
+            <a href="https://www.tiktok.com/en/"> <img src="images/tictok-bw.svg" alt="tiktok logo" width="50"
+                    height="50"> </a>
+            <a href="https://www.instagram.com/"> <img src="images/instagram.svg" alt="instagram logo" width="50"
+                    height="50"> </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
