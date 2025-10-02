@@ -4,6 +4,7 @@
     --accent-color : #ffbf69 ; /*Light Orange*/
     --background-tint : #cbf3f0  ; /*Pale blue*/
     --neutral-color : #ffffff ; /*White*/
+    --colour6 : #d6b426 ;
     --heading-font : Arial, Helvetica, sans-seri ;
     --text-font : Georgia, 'Times New Roman', Times, serif;
 }
@@ -22,11 +23,13 @@ body{
 header{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    background-color: var(--secondary-color);
 }
 
 header img{
     width: 110px;
     height: 110px;
+    margin-left: 100px;
 }
 
 nav ul{
@@ -34,7 +37,7 @@ nav ul{
     gap: 10px;
     list-style-type: none;
     padding-top: 20px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 nav ul li a{
@@ -46,7 +49,7 @@ nav ul li a{
 }
 
 header, main, footer{
-    width: 900px ;
+    width: 1100px ;
     margin: 0 auto;
 }
 
@@ -70,19 +73,27 @@ nav, p, section, article{
 
 .hero h1{
     position: absolute;
-    color: var(--neutral-color);
+    color: var(--background-tint);
     text-align: center;
     left: 40%;
+    top: 5%;
+    font-family: fantasy ;
 }
 
 h2{
     text-align: center;
+    margin-bottom: 27px;
 }
 
-article{
+.hero article{
     position: absolute;
-    top: 30%;
+    top: 12%;
     color: var(--neutral-color);
+    background-color: var(--colour6);
+}
+
+.hero article p{
+    color: black;
 }
 
 .hero article img{
@@ -91,7 +102,7 @@ article{
     float: right;
 }
 
-.hero img{
+.hero img, .home img{
     display: block;
     width: 100%;
     height: auto;
@@ -125,8 +136,7 @@ article{
 .Adventure{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    gap: 7px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 figcaption{
@@ -140,7 +150,7 @@ figcaption{
 footer{
     display: flex;
     justify-content: flex-end;
-    gap: 50px;
+    gap: 150px;
     background-color: var(--secondary-color);
 }
 
@@ -166,9 +176,10 @@ footer p{
     margin-bottom: 10px;
 }
 .contact h1{
-    color: black;
+    color: var(--secondary-color);
     text-align: center;
     margin-top: 0;
+    font-family: fantasy ;
 }
 
 .contact p{
@@ -178,7 +189,7 @@ footer p{
 }
 
 form{
-    background-color: lightsteelblue;
+    background-color: var(--accent-color);
     padding: 15px;
     border-radius: 5px;
     display: grid;
@@ -222,4 +233,125 @@ button{
 .c1 {
   grid-template-columns: 1fr 2fr;
    margin-top: 5px;
+}
+
+/* Styling Home Page */
+.home img{
+    position: relative;
+    filter: blur(1px);
+}
+
+.home h3, .home p{
+    position: absolute;
+    top: 20%;
+   color: var(--neutral-color);
+   font-size: 1.5rem;
+}
+
+.home-btn button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+.box .c1 input{
+    margin-right: 100px;
+}
+
+form h1{
+    margin-bottom: 20px;
+    font-family: fantasy ;
+}
+
+.btn{
+    border: 3px solid var(--primary-color);
+    padding: 10px;
+    text-decoration: none;
+    color: var(--background-tint);
+    background-color: var(--secondary-color);
+}
+
+.cta{
+    text-align: center;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+
+.image-grid p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: large;
+}
+
+.g1{
+    grid-column: 1/2;
+}
+
+.g3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.g2{
+    grid-column: 2/3;
+}
+
+/* Styling trip pages */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid var(--secondary-color);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+  border: 1px solid var(--secondary-color);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: var(--background-tint);
+}
+
+.cta{
+    grid-column: span 2;
+}
+
+.cta h1{
+    font-family: fantasy ;
+}
+
+.trip-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.table{
+    grid-column: span 2;
+}
+
+.table h2{
+    margin-top: 10px;
+}
+
+.trip-cont3{
+    grid-column: span 2;
+    text-align: center;
 }
